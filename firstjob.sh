@@ -1,7 +1,7 @@
 pipeline{
 	agent any 
 	stages{
-		 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/Etecholu/Oludemo.git']])
+		stage('1-start'){
 			steps{
 				echo "keep walking"
 				sh 'cat /etc/passwd'
